@@ -1,4 +1,3 @@
-import { registerables } from 'chart.js';
 import React, { useState, useEffect } from 'react';
 import { Line, Bar } from 'react-chartjs-2'
 
@@ -16,7 +15,7 @@ function Chart(props) {
         fetchedDailyData()
     }, [])
 
-   
+
 
     const lineChart = (
         dailyData.length ?
@@ -39,8 +38,6 @@ function Chart(props) {
 
             /> : null
     )
-
-    console.log(dailyData)
 
     return (
         <div className={styles.container}>
